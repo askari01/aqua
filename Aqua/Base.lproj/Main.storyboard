@@ -18,15 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-1u-Vpq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scan" translatesAutoresizingMaskIntoConstraints="NO" id="wOc-1u-Vpq">
+                                <rect key="frame" x="0.0" y="117" width="375" height="550"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-GV-Ivp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="kJ0-Gx-eaD" kind="show" id="srg-sx-0k4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wOc-1u-Vpq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NNa-hr-cVn"/>
+                            <constraint firstItem="wOc-1u-Vpq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="117" id="NNa-hr-cVn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GYf-GV-Ivp" secondAttribute="trailing" id="PPj-wB-ipL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GYf-GV-Ivp" secondAttribute="bottom" id="Upb-Mx-vcY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wOc-1u-Vpq" secondAttribute="bottom" id="VcH-tt-7YE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wOc-1u-Vpq" secondAttribute="trailing" id="W9y-b7-psx"/>
+                            <constraint firstItem="GYf-GV-Ivp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YIg-pq-7y8"/>
+                            <constraint firstItem="GYf-GV-Ivp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bCS-9I-tPg"/>
                             <constraint firstItem="wOc-1u-Vpq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gGp-CJ-cyv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -34,6 +44,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jmC-cL-rFg">
+            <objects>
+                <viewController id="kJ0-Gx-eaD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z25-2n-WKC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="passcode" translatesAutoresizingMaskIntoConstraints="NO" id="zoi-UE-Kwo">
+                                <rect key="frame" x="0.0" y="180" width="375" height="495"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATW-Yd-pZM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="hjI-Kk-4uS" kind="show" id="L5t-pj-fTw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZHX-aA-73H" firstAttribute="bottom" secondItem="ATW-Yd-pZM" secondAttribute="bottom" id="MVm-Mf-694"/>
+                            <constraint firstItem="zoi-UE-Kwo" firstAttribute="leading" secondItem="ZHX-aA-73H" secondAttribute="leading" id="NTw-nS-I2p"/>
+                            <constraint firstItem="ZHX-aA-73H" firstAttribute="trailing" secondItem="ATW-Yd-pZM" secondAttribute="trailing" id="egx-Kj-wIA"/>
+                            <constraint firstItem="ATW-Yd-pZM" firstAttribute="leading" secondItem="ZHX-aA-73H" secondAttribute="leading" id="hrg-9j-dEJ"/>
+                            <constraint firstItem="ATW-Yd-pZM" firstAttribute="top" secondItem="ZHX-aA-73H" secondAttribute="top" id="iZv-RI-Gdl"/>
+                            <constraint firstItem="ZHX-aA-73H" firstAttribute="trailing" secondItem="zoi-UE-Kwo" secondAttribute="trailing" id="k2m-Gf-TIC"/>
+                            <constraint firstItem="zoi-UE-Kwo" firstAttribute="top" secondItem="ZHX-aA-73H" secondAttribute="top" constant="160" id="xXc-9T-hxy"/>
+                            <constraint firstItem="ZHX-aA-73H" firstAttribute="bottom" secondItem="zoi-UE-Kwo" secondAttribute="bottom" constant="-8" id="xbf-f1-y61"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZHX-aA-73H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKr-x3-Vij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="knX-2P-CBY">
+            <objects>
+                <viewController id="hjI-Kk-4uS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gzb-nH-uLD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="o2U-NI-rv9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gi6-81-6QA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="u02-h4-gVs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="333-rc-AxM" firstAttribute="trailing" secondItem="Gi6-81-6QA" secondAttribute="trailing" id="0gP-dc-tUi"/>
+                            <constraint firstItem="333-rc-AxM" firstAttribute="bottom" secondItem="o2U-NI-rv9" secondAttribute="bottom" id="3ar-cM-7MH"/>
+                            <constraint firstItem="Gi6-81-6QA" firstAttribute="top" secondItem="333-rc-AxM" secondAttribute="top" id="B2R-ch-3ZD"/>
+                            <constraint firstItem="o2U-NI-rv9" firstAttribute="top" secondItem="333-rc-AxM" secondAttribute="top" id="J4L-3s-4Ud"/>
+                            <constraint firstItem="Gi6-81-6QA" firstAttribute="leading" secondItem="333-rc-AxM" secondAttribute="leading" id="MtO-6G-SC0"/>
+                            <constraint firstItem="o2U-NI-rv9" firstAttribute="leading" secondItem="333-rc-AxM" secondAttribute="leading" id="PBA-xC-vaA"/>
+                            <constraint firstItem="333-rc-AxM" firstAttribute="trailing" secondItem="o2U-NI-rv9" secondAttribute="trailing" id="XPZ-Zx-t7a"/>
+                            <constraint firstItem="333-rc-AxM" firstAttribute="bottom" secondItem="Gi6-81-6QA" secondAttribute="bottom" id="x56-rm-RGN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="333-rc-AxM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSr-sp-bk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664.8" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="main" width="981" height="1974"/>
+        <image name="passcode" width="857" height="1659"/>
+        <image name="scan" width="810" height="1851"/>
+    </resources>
 </document>
